@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <script type="text/javascript" src="tanchishe.js"></script>
+</head>
+
+<body>
+    <div style=" text-align: center">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <div style="position: absolute;top: 300px;left: 30px;">score:<span id="score">0</span></div>
+
+    <script type="text/javascript">
+        window.onload=function(){
+            tcs({
+                canvas : document.getElementById('myCanvas'),
+                span_score : document.getElementById('score'),
+                maxNumber : 630, // 最大长宽，这里的画布是正方形
+                stride : 15, //每个小方块的长宽，
+                speed : 300 // 移动速度
+            });
+        }
+    </script>
+</body>
+
+</html>
